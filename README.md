@@ -35,7 +35,7 @@ The requirements.txt file contains all the library files needed for the program 
 **Note:** There may be some extra or repeated library files present in the requirements file, usually I maintain a single requirement file so sometimes i copy the existing command which may already be there. It will never effect anything to the program.
 
 3) After that we have to load our trained model, you can directly download the pretrained model which I have provided and put it in the colab to import it.
-- [x] MCCNet.h5 ( Our pretrained model, trained on our synthetic paired dataset, for 600 epochs with 32 steps per epoch. Adam Optimizer and L1 loss function has been used.)
+- [x] MCCNet.h5 present in MCCNet.rar( Our pretrained model, trained on our synthetic paired dataset, for 600 epochs with 32 steps per epoch. Adam Optimizer and L1 loss function has been used.)
 ```
 from tensorflow.keras.models import load_model
 # load model
