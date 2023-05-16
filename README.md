@@ -5,17 +5,17 @@ Our technique utilizes a multi-scale cross-connection network (MCCNet) that empl
 
 
 <p float="left">
-  <img src="/Images/197_low.png" width="200" />
-  <img src="/Images/197_high.png" width="200" />
-  <img src="/Images/278_low.png" width="200" />
-  <img src="/Images/278_high.png" width="200" /> 
+  <img src="/Images/low_722.png" width="200" />
+  <img src="/Images/ours_722.png" width="200" />
+  <img src="/Images/low_733.png" width="200" />
+  <img src="/Images/ours_733.png" width="200" /> 
 </p>
 
 <p float="left">
-  <img src="/Images/Low_25.JPG" width="200" />
-  <img src="/Images/Ours_25.png" width="200" />
-  <img src="/Images/low_722.png" width="200" />
-  <img src="/Images/ours_722.png" width="200" /> 
+  <img src="/Images/SICE_low.JPG" width="200" />
+  <img src="/Images/SICE_ours.png" width="200" />
+  <img src="/Images/75_low.JPG" width="200" />
+  <img src="/Images/mccnet.png" width="200" /> 
 </p>
 
 **Fig:** Results of our approach, where we compared to the original low light image and our enhanced image.
