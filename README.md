@@ -32,9 +32,9 @@ The requirements.txt file contains all the library files needed for the program 
 
 2) Then copy the contents of requirements.txt and just run in a cell in colab.
 
-**Note:** There may be some extra or repeated library files present in the requirements file, usually I maintain a single requirement file so sometimes i copy the existing command which may already be there. It will never effect anything to the program.
+**Note:** There may be some extra or repeated library files present in the requirements file, usually I maintain a single requirement file so sometimes i copy the existing command which may already be there. It will never affect anything to the program.
 
-3) After that we have to load our trained model, you can directly download the pretrained model which I have provided and put it in the colab to import it.
+3) After that we have to load our trained model; you can directly download the pre-trained model which I have provided and put it in the colab to import it.
 - [x] MCCNet.h5 present in MCCNet.rar( Our pretrained model, trained on our synthetic paired dataset, for 600 epochs with 32 steps per epoch. Adam Optimizer and L1 loss function has been used.)
 ```
 from tensorflow.keras.models import load_model
@@ -44,9 +44,9 @@ Model = load_model(path to the model)
 Model.summary()
 ```
 
-Now our model is loaded in **Model**. , We can test low light images from this model. Some of the low light images on which i have tested my model , I will provide here.
+Now, our model is loaded in **Model**. We can test low-light images from this model. Some of the low-light images on which I have tested my model, I will provide here.
 
-4) To test image, define this function
+4) To test the image, define this function
 ```
 from google.colab.patches import cv2_imshow
 import cv2
@@ -58,7 +58,7 @@ def test(img,og):
   Prediction = Model.predict(image_for_test)
   Prediction = Prediction.reshape(400,600,3)
   Prediction = np.array(Prediction)
-  #Write the Low light image, the predictiona image and groundtruth image
+  #Write the Low light image, the prediction image and groundtruth image
   cv2.imwrite('root path', img)
   cv2.imwrite('root path', Prediction)
   cv2.imwrite('root path', og)
